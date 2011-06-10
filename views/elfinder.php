@@ -9,7 +9,6 @@ if(elfinder_loader != true)
 		elfinder_loader = true;
 		// Include css file
 		var elfinder_loader_css = document.createElement("link");
-		elfinder_loader_css.id = "elrte";
 		elfinder_loader_css.type = "text/css";
 		elfinder_loader_css.rel = "stylesheet";
 		elfinder_loader_css.href = "<?php echo Route::url('elfinder/media', array('file' => 'css/elfinder.css'));?>";
