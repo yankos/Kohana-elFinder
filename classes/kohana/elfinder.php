@@ -44,10 +44,10 @@ class Kohana_elFinder extends Core_elFinder {
 	}
 
 	/**
-	 * Renders the elFinder.
+	 * Render the elFinder.
 	 *
 	 * @param   string   string of the view to use
-	 * @return  string  pagination output (HTML)
+	 * @return  string  output (HTML)
 	 */
 	public function render($view = NULL)
 	{
@@ -62,36 +62,12 @@ class Kohana_elFinder extends Core_elFinder {
 	}
 
 	/**
-	 * Renders the pagination links.
+	 * Render the elFinder.
 	 *
-	 * @return  string  pagination output (HTML)
+	 * @return  string  output (HTML)
 	 */
 	public function __toString()
 	{
 		return $this->render();
 	}
-
-	/**
-	 * Returns a elFinder property.
-	 *
-	 * @param   string  property name
-	 * @return  mixed   elFinder property; NULL if not found
-	 */
-	/*public function __get($key)
-	{
-		return isset($this->$key) ? $this->$key : NULL;
-	}*/
-
-	/**
-	 * Updates a single config setting.
-	 *
-	 * @param   string  config key
-	 * @param   mixed   config value
-	 * @return  void
-	 */
-	/*public function __set($key, $value)
-	{
-		$this->setup(array($key => $value));
-	}*/
-
 }
