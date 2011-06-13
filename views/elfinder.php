@@ -14,7 +14,7 @@ if(elfinder_loader != true)
 		elfinder_loader_css.href = "<?php echo Route::url('elfinder/media', array('file' => 'css/elfinder.css'));?>";
 		var s_css = document.getElementsByTagName("link")[0];
 		s_css.parentNode.insertBefore(elfinder_loader_css, s_css);
-
+		
 		// Include js file
 		var elfinder_loader_js = document.createElement("script");
 		elfinder_loader_js.type = "text/javascript";
@@ -22,6 +22,16 @@ if(elfinder_loader != true)
 		elfinder_loader_js.src = "<?php echo Route::url('elfinder/media', array('file' => 'js/elfinder.js'));?>";
 		var s_js = document.getElementsByTagName("script")[0];
 		s_js.parentNode.insertBefore(elfinder_loader_js, s_js);
+
+		<?php if($lang != 'en'): // en is built-in lang?>
+		// Include js file
+		var elfinder_I18n_js = document.createElement("script");
+		elfinder_I18n_js.type = "text/javascript";
+		elfinder_I18n_js.async = false;
+		elfinder_I18n_js.src = "<?php echo Route::url('elfinder/media', array('file' => 'js/i18n/elfinder.'.$lang.'.js'));?>";
+		var s_js = document.getElementsByTagName("script")[0];
+		s_js.parentNode.insertBefore(elfinder_I18n_js, elfinder_loader_js);
+		<?php endif;?>
 	})();
 }
 </script>
@@ -31,7 +41,8 @@ $(window).load(function()
 {
 	$("#<?php echo $jq_selector;?>").elfinder(
 	{
-		url: "<?php echo $js_cmd_route;?>"
+		url: "<?php echo $js_cmd_route;?>",
+		lang: "<?php echo $lang;?>"
 	});
 });
 </script>

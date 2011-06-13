@@ -4,6 +4,7 @@ return array
 (
 	'default' => array
 	(
+		'lang' => NULL, //bool, if null using from I18n::lang()
 		'root' => DOCROOT.'media/', // path to root directory
 		'URL' => Url::base().'media/', // root directory URL
 		'rootAlias' => 'Home', // display this instead of root directory name
@@ -11,8 +12,8 @@ return array
 //		'uploadDeny' => array('all'),
 //		'uploadOrder' => 'deny,allow'
 //		'disabled' => array(), // list of not allowed commands
-//		'dotFiles' => false, // display dot files
-//		'dirSize' => true, // count total directories sizes
+//		'dotFiles' => FALSE, // display dot files
+//		'dirSize' => TRUE, // count total directories sizes
 //		'fileMode' => 0777, // new files mode
 //		'dirMode' => 0777, // new folders mode
 //		'mimeDetect' => 'auto', // files mimetypes detection method (finfo, mime_content_type, linux (file -ib), bsd (file -Ib), internal (by extensions))
@@ -24,17 +25,17 @@ return array
 //		'tmbCleanProb' => 1, // how frequiently clean thumbnails dir (0 - never, 100 - every init request)
 //		'tmbAtOnce' => 5, // number of thumbnails to generate per request
 //		'tmbSize' => 48, // images thumbnails size (px)
-//		'fileURL' => true, // display file URL in "get info"
+//		'fileURL' => TRUE, // display file URL in "get info"
 //		'dateFormat' => 'j M Y H:i', // file modification date format
 //		'logger' => null, // object logger
 //		'defaults' => array // default permisions
 //		(
-//			'read' => true,
-//			'write' => true,
-//			'rm' => true
+//			'read' => TRUE,
+//			'write' => TRUE,
+//			'rm' => TRUE
 //		),
 //		'perms'        => array(), // individual folders/files permisions    
-//		'debug'        => true, // send debug to client
+//		'debug'        => TRUE, // send debug to client
 //		'archiveMimes' => array(), // allowed archive's mimetypes to create. Leave empty for all available types.
 //		'archivers'    => array() // info about archivers to use. See example below. Leave empty for auto detect
 //		'archivers' => array

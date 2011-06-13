@@ -40,6 +40,11 @@ class Kohana_elFinder extends Core_elFinder {
 		$this->config = Kohana::config($this->config_name.'.'.$this->config_group_name);
 		$this->config['jq_selector'] = 'jq_'.$this->config_name.'_'.$this->config_group_name;
 		$this->config['js_cmd_route'] = Route::url($this->config_name, array('config' => $this->config_group_name));
+		if($this->config['lang'] == NULL)
+		{
+			$this->config['lang'] = explode('-', I18n::lang());
+			$this->config['lang'] = $this->config['lang'][0];
+		}
 		parent::__construct($this->config);
 	}
 
