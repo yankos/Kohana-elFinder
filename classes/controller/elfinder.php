@@ -18,7 +18,6 @@ class Controller_Elfinder extends Controller {
 	public function action_index()
 	{
 		$elFinder = elFinder::factory(Request::current()->param('config'));
-		$_GET['cmd'] = Request::current()->param('cmd');
 		ob_start();
 		$elFinder->run();
 		$elFinder_output = ob_get_contents();
