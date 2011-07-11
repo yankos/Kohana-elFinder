@@ -1,3 +1,8 @@
+/**
+ * Russian translation
+ * @author Dmitry Levashov <dio@std42.ru>
+ * @version 2010-09-22
+ */
 (function($) {
 if (elFinder && elFinder.prototype.options && elFinder.prototype.options.i18n) 
 	elFinder.prototype.options.i18n.ru = {
@@ -62,7 +67,7 @@ if (elFinder && elFinder.prototype.options && elFinder.prototype.options.i18n)
 		'Uncompress archive'      : 'Распаковать архив',
 		'Get info'                : 'Свойства',
 		'Help'                    : 'Помощь',
-		'Dock/undock filemanger window' : 'Отсоединить/присоединить файловый менеджер к странице',
+		'Dock/undock filemanager window' : 'Отсоединить/присоединить файловый менеджер к странице',
 		/* upload/get info dialogs */
 		'Maximum allowed files size' : 'Максимальный размер файлов',
 		'Add field'   : 'Добавить поле',
@@ -76,7 +81,7 @@ if (elFinder && elFinder.prototype.options && elFinder.prototype.options.i18n)
 		'Link to'     : 'Указывает',
 		'Dimensions'  : 'Разрешение',
 		'Confirmation required' : 'Требуется подтверждение',
-		'Are you shure you want to remove files?<br /> This cannot be undone!' : 'Вы уверены, что хотите удалить файл? <br />Действие необратимо.',
+		'Are you sure you want to remove files?<br /> This cannot be undone!' : 'Вы уверены, что хотите удалить файл? <br />Действие необратимо.',
 		/* permissions */
 		'read'        : 'чтение',
 		'write'       : 'запись',
@@ -173,7 +178,15 @@ if (elFinder && elFinder.prototype.options && elFinder.prototype.options.i18n)
 		'Python programming, techsupport: Troex Nevelin, troex@fury.scancode.ru' : 'Программирование Python, техподдержка: Troex Nevelin, troex@fury.scancode.ru',
 		'Design: Valentin Razumnih'     : 'Дизайн: Валентин Разумных',
 		'Spanish localization'          : 'Испанская локализация',
-		'Icons' : 'Иконки',
+		'Chezh localization'            : 'Чешская локализация',
+		'Chinese (traditional) localization' : 'Китайская (трад.) локализация',
+		'Dutch localization'            : 'Голландская локализация',
+		'Greek localization'            : 'Греческая локализация',
+		'Hungarian localization'        : 'Венгерская локализация',
+		'Italian localization'          : 'Итальянская локализация',
+		'Latvian localization'          : 'Латвийская локализация',
+		'Poland localization'           : 'Польская локализация',
+		'Icons'                         : 'Иконки',
 		'License: BSD License'          : 'Лицензия: BSD License',
 		'elFinder documentation'        : 'Документация elFinder',
 		'Simple and usefull Content Management System' : 'Простая и удобная Система Управления Сайтами',

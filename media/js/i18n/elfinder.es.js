@@ -1,3 +1,8 @@
+/*
+ * Spanish translation
+ * @author Alex Vavilin <xand@xand.es>
+ * @version 2010-09-22
+ */
 (function($) {
 if (elFinder && elFinder.prototype.options && elFinder.prototype.options.i18n) 
 	elFinder.prototype.options.i18n.es = {
@@ -62,7 +67,7 @@ if (elFinder && elFinder.prototype.options && elFinder.prototype.options.i18n)
 		'Uncompress archive'      : 'Extraer archivo',
 		'Get info'                : 'Propiedades',
 		'Help'                    : 'Ayuda',
-		'Dock/undock filemanger window' : 'Despegar/pegar el gestor de ficheros a la página',
+		'Dock/undock filemanager window' : 'Despegar/pegar el gestor de ficheros a la página',
 		/* upload/get info dialogs */
 		'Maximum allowed files size' : 'Tamaño máximo del fichero',
 		'Add field'   : 'Añadir campo',
@@ -76,7 +81,7 @@ if (elFinder && elFinder.prototype.options && elFinder.prototype.options.i18n)
 		'Link to'     : 'Enlaza con',
 		'Dimensions'  : 'Dimensiones',
 		'Confirmation required' : 'Se requiere confirmación',
-		'Are you shure you want to remove files?<br /> This cannot be undone!' : '¿Está seguir que desea eliminar el fichero? <br />Esta acción es irreversible.',
+		'Are you sure you want to remove files?<br /> This cannot be undone!' : '¿Está seguir que desea eliminar el fichero? <br />Esta acción es irreversible.',
 		/* permissions */
 		'read'        : 'lectura',
 		'write'       : 'escritura',

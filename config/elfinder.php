@@ -25,6 +25,8 @@ return array
 //		'tmbCleanProb' => 1, // how frequiently clean thumbnails dir (0 - never, 100 - every init request)
 //		'tmbAtOnce' => 5, // number of thumbnails to generate per request
 //		'tmbSize' => 48, // images thumbnails size (px)
+//		'tmbCrop'      => true,         // crop thumbnails (true - crop, false - scale image to fit thumbnail size)
+//		'tmbBgColor'   => '#ffffff',    // thumbnail background color
 //		'fileURL' => TRUE, // display file URL in "get info"
 //		'dateFormat' => 'j M Y H:i', // file modification date format
 //		'logger' => null, // object logger
